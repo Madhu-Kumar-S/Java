@@ -3,15 +3,15 @@ package basics;
 public class DataTypes {
     public static void main(String args[])
     {
-        byte b = 127;
-        short s = 32767;
-        int i = 2147483647;
-        long l = 92;
+        byte b = 127; // 1 byte = 8 bits
+        short s = 32767; // 2 bytes
+        int i = 2147483647; // 4 bytes
+        long l = 92; // 8 bytes
 
-        float f = 5.6f;
-        double d = 5.067;
+        float f = 5.6f; // 4 bytes
+        double d = 5.067; // 8 bytes
 
-        char c = 'x';
+        char c = 'x'; // 2 bytes
         String str = "Hi";
 
         boolean bool = true;

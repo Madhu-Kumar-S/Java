@@ -4,13 +4,13 @@ import java.io.*;
 import java.util.*;
 
 public class InputOutput {
-    public static void main(String args[]) throws IOException
+    public static void main(String[] args) throws IOException
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         // to read char
 
-        // br.read() takes input as single char from keyboard but it releases \n char
+        // br.read() takes input as single char from keyboard, but it releases \n char
         // which is taken input for next upcoming input
 
         //solution 1
@@ -103,10 +103,6 @@ public class InputOutput {
         char ct = 'A';
 
         System.out.println(String.format("%ninteger = %d%nstring = %s%nchar = %c",no,stt,ct));
-
-
-
-
 
     }
 }

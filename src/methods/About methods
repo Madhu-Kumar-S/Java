@@ -1,0 +1,71 @@
+instance method -> act upon instance variable of the class.
+can be called using object.method_name();
+
+static methods-> do not act upon instance variables and also called as class variables.
+can be called using classname.method_name();
+
+Static content can be accessed only by static members.
+non-static content or instance variables and methods can access both static and non-static content.
+
+instance variables are the variables whose separate copy is available to each and every object.
+instance variables are stored on a heap memory.
+
+class variables are the variables whose single copy in a memory is shared by all the objects.
+class variables or stored on method area.
+
+After executing the static methods only JVM will create objects
+That's y static methods cannot access instance variables as it is not available to object
+whereas instance methods can access both static and non static content
+The main priority is given to the static  / class content than instance content
+
+JVM executes static block on higher priority basis and then only main method
+
+Local Variables are the variables that are declared inside the method
+and can be accessed from that method but not outside methods
+their scope is limited to where they are declared and initialized in a method
+
+'this' is a keyword that refers to the object of the current class where it is used
+or 'this' refers to a current object which is in execution
+
+remember:
+instance method -> act upon instance variable of the class.
+can be called using object.method_name();
+can access both instance and static variables
+
+2 types of instance methods:
+1 -> Mutator methods / Setter methods => store the data
+access the instance variables but also modify
+this methods return type should be void
+
+2 -> Accessor methods / Getter methods => read the data
+access or read the instance variables
+this methods should have a return type
+
+different type of parameters can be passes into methods:
+1 -> passing primitive DT (pass by value or call by value)
+     primitive DT are the fundamental DT represents single entities or single values
+     eg. byte, short, int, long, float, double, char and boolean
+     they are passed to methods by value
+     so a copy of those variables will be passed to methods and
+     any changes in that passed copy inside a method will not affect original copy outside a method
+2 -> passing objects
+     objects are also passed to methods by pass by value concept
+     here bit by bit copy of the objects are passed
+     any modification done to the objects inside a method will not affect the original copy outside the method
+3 -> passing arrays
+     this are similar to other kind
+     here arrays are passes to methods it can be void or
+     if it has return type is array then u should return a array
+     int[] arr = new int[5];
+     int[] getArray()
+     {
+     // statements to process arr
+     return arr;
+     }
+
+Recursion Function -> A fun which calls by itself
+
+
+
+
+
