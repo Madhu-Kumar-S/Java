@@ -1,0 +1,31 @@
+Deriving a new class(sub class) from already existing class(super class) such that new class acquires all the features of
+the already existing class is called inheritance
+provides code reusablitiy i.e class reuse
+when a object to a student class is created it contains a copy of a teachers class
+Super class members are available to the sub class because subclass contains a copy of the super class object
+
+protected specifier is commonly used in superclass to make the super class members available to the subclass
+if we declare members in super class as private then it wont be able to accessed by subclass
+
+when both super class and subclass contains same variables and method names
+so if we create an object to subclass then, only subclass members will be accessed
+but not super class as super class contains same variable and method name
+To overcome this
+'super' keyword is used in subclass to access the members of super class
+
+to refer constructor -> super();
+to refer method -> super.methodname();
+to refer variable -> super.variablename;
+
+
+When an object to a subclass is created then the default constructor of the super class will be automatically called
+and then the sub class. Since superclass default constructor is already available to the subclass by default
+But in case of parameterized constructor, it should be called explicitly  by using super() keyword
+
+
+There is only one inheritance available in java
+that is Single inheritance -> producing sub classes from a single super class
+there can be more than one sub class
+
+multiple inheritance leads to confusion for a java program
+ can be achieved by using interfaces
