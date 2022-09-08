@@ -1,0 +1,75 @@
+In a greek term
+poly -> many
+morphos -> forms
+
+the ability to exist in different forms is called polymorphism
+in java a variable or a method can exist in different forms depending upon the context given and the task performed
+
+Coercion / Implicit conversion -> automatic converting from one datatype to target datatype by the compiler
+int a = 1;
+float b = 2;
+SOP(a+b); // returns float value
+
+Conversion / TypeCasting / Explicit conversion -> conversion of one datatype to another datatype explicitly
+float a = 10;
+int b = (int)a;
+
+polymorphism - P
+
+2 types of polymorphism
+1 -> Dynamic / runtime P
+Dynamic P is P which is exhibited during runtime,
+here java compiler does not understand which method is called at compile time.
+Only JVM decides which method is called at runtime
+eg: method overloading and overriding using instance methods
+
+2 -> Static / compile-time P
+Static P is P which exhibits during compile time
+Here Java compile knows which method is called
+eg: method overloading and overriding using static methods
+method overriding using private/final methods
+
+Dynamic / runtime P:
+P exhibited at runtime = dynamic P
+
+method signature -> represents method name + parameters
+
+when a method is called, the method call is bound to the method body during at runtime of a program
+java compiler does not which method should be called at a compile time.
+This is because methods are called at a run time with the help of a objects,
+so to identify which method should be called, then here comes method signature
+which is method declaration so during a method call the method call bound to the method body and identifies if a
+method call and calling method signature are same, if it is same then the particular method is called
+
+JVM knows which method call should be bound to which method
+
+method overloading -> Declaring two methods with same name but different method signature(difference in parameters)
+in a same class.
+can have same return type or not
+method order need not to be same
+Compile time polymorphism
+
+method overriding -> Declaring two or more same methods with same method signature in both super and sub classes
+return type should be same
+run time polymorphism
+here JVM calls which method has to be called depending upon the object to which class it is created
+
+Static / compile-time P
+P exhibited at compile time = static P
+here methods maintains only one copy to the objects
+so the java compiler knows which method to call
+
+P with static methods:
+Static methods -> single copy in a memory is shared by all objects
+static methods belongs to a class rather to an objects, so they are called by class name
+When these methods are overloaded or overriden, since they wont depend upon objects so java compiler
+need not wait until the objects created to understand which method should be called
+
+P with private and final methods:
+method overloading is possible with private / final methods
+method overriding is not possible with private/final methods,
+because if a method is declared as private/final in super class then it is not available to the sub class
+
+final keyword
+-used in class to prevent inheritance
+-used in variable to declare constants

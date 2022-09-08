@@ -1,7 +1,8 @@
 instance method -> act upon instance variable of the class.
 can be called using object.method_name();
 
-static methods-> do not act upon instance variables and also called as class variables.
+static methods -> act upon static/class variables
+single copy in a memory is shared by all objects
 can be called using classname.method_name();
 
 Static content can be accessed only by static members.
@@ -10,7 +11,7 @@ non-static content or instance variables and methods can access both static and 
 instance variables are the variables whose separate copy is available to each and every object.
 instance variables are stored on a heap memory.
 
-class variables are the variables whose single copy in a memory is shared by all the objects.
+static methods / class variables are the variables whose single copy in a memory is shared by all the objects.
 class variables or stored on method area.
 
 After executing the static methods only JVM will create objects
