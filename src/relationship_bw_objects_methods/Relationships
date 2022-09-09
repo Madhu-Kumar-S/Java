@@ -1,0 +1,22 @@
+It is also possible to pass data from one object to another in chained form
+for doing this, there are 3 ways to relate objects in java
+
+1 -> using references (i.e objects)
+2 -> using inner class concept
+3 -> using inheritance
+
+Inner classes:
+A class declared inside another class
+inner classes is a safety mechanism becoz it is hidden from outer classes
+private access specifier can be used for inner classes for providing security
+object to inner classes cannot be created outside,
+it can be created inside the class which it is declared (i.e outer class)
+inner class can access members of the class where it is declared
+
+important notes:
+Outer class members can be referred as Outerclassname.this.member; inside inner classes where it is declared.
+inner class can access the outer class members directly.
+inner class and outer class objects are created seperate memory locations.
+Inner class object contains an additional invisible field 'this$0' that refers to its outer class object.
+
+
