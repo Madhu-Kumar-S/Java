@@ -13,6 +13,7 @@ public class TeacherStudent {
     {
         Teacher t = new Teacher();
         System.out.println("Teacher Details");
+        System.out.println("_______________");
         t.setName("Alan");
         t.setId(2);
         t.setAge(28);
@@ -22,9 +23,11 @@ public class TeacherStudent {
         System.out.println("Teachers Id: "+t.getId());
         System.out.println("Teachers Age: "+t.getAge());
         System.out.println("Teachers Salary: "+t.getSal());
+        System.out.println();
 
         Student s = new Student();
         System.out.println("Student Details");
+        System.out.println("_______________");
         s.setName("Elon");
         s.setId(21);
         s.setAge(22);
@@ -33,7 +36,7 @@ public class TeacherStudent {
         System.out.println("Students Name: "+s.getName());
         System.out.println("Students Id: "+s.getId());
         System.out.println("Students Age: "+s.getAge());
-        System.out.println("Students Salary: "+s.getMarks());
+        System.out.println("Students Marks: "+s.getMarks());
 
     }
 }
