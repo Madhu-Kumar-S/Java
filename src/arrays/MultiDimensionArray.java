@@ -14,7 +14,7 @@ public class MultiDimensionArray {
 
         int[][] twoD1 = {{1,2,3,4},{5,6,7,8},{9,10,11,12}}; // 1-row 3-columns
         System.out.println("Two D Array 1:");
-        for (int i=0;i<twoD1.length;i++)
+         for (int i=0;i<twoD1.length;i++)
         {
             for(int j=0;j<twoD1[i].length;j++)
             {

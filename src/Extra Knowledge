@@ -1,0 +1,38 @@
+Expressions - operators are used in building expressions
+
+Statement -  one complete unit of execution
+
+Block - Group of statements
+
+primitive DT - 8
+
+To calculate the max/min value of any DT:
+for unsigned:
+      2^n - 1
+for signed:
+-ve:
+    -2^n-1
++ve:
+    +2^n-1 - 1
+Where n=no.of bits
+1 byte = 8 bits
+
+Infinite for and while loop:
+for( ; ; ){}
+while(true){}
+
+priority of operators
+        .operator
+        braces => ()[]
+        post increment or decrement => o++, o--
+        unary => ++o, --o, +o, -o, ~, !
+        new()
+        multiplicative => *, /, %
+        additive => +, -
+        shift => <<, >>, >>>
+        relational => <, >, <=, >=, instanceOf()
+        equality => ==, !=
+        Bitwise => &, ^, |
+        Logical => &&, ||
+        ternary => condition ? statement1 : statement 2
+        assignment => = += -= *= /= %= &= ^= != <<= >>= >>>=
