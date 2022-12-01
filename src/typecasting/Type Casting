@@ -1,0 +1,78 @@
+Converting one datatype into another datatype - type casting
+using cast operator '(target datatype) value'.
+
+primitive DT casting:
+
+DT -> 2 types
+1. primitive DT - represent single entity | no methods to handle them |
+byte, short, char, int, long, float, double
+lower<------------------------------>higher
+
+2. Referenced/Advanced DT - represent group of values | have methods to handle them
+
+Casting is done in two ways:
+1. Widening - converting lower DT into higher DT | using cast operator is optional | no loss of data
+also called as 'Implicit casting' - becoz java compiler internally does the casting operation
+char ch = 'A'
+int ascii = (int)ch; (or)
+int i = 1;
+float f = i;
+
+2. Narrowing - converting higher DT into lower DT | must use cast operator | loss of data
+also called as 'Explicit casting' - becoz programmer uses cast operator for casting
+int ascii = 64;
+char ch = (int)ascii;
+
+Referenced DT casting:
+
+Inorder to cast referenced DT i.e class it should be in inheritance, have some relationship.
+class One
+class Two extends One
+
+Generalization - converting subclass to super class
+aka widening / Up-casting
+One o = new Two();
+
+Specialization - converting super class to subclass
+aka narrowing / Down-casting
+One o = new Two();
+Two t = (Two)o;
+
+...........................................................
+There is a Object class in java.lang package
+which is a super class for all the classes (both built in and user-defined) in java.
+so every class in java is a direct or indirect subclass to the Object class.
+
+methods:
+equals() - checks if both objects are equal
+toString() - converts to string object
+getClass() - get the class of an given object
+hashCode() - gives the object unique identification num
+notify() - notify the single thread
+notifyAll() - notify all the threads
+wait() - makes threads wait
+clone() - creates bit wise exact copy of object
+finalize() - this method is called by the garbage collector
+             when an object is removed from the memory
+
+
+Cloning the class objects:
+2 ways of cloning:
+1. shallow cloning
+     any changes made to the cloned object will modify the original object
+2. deep cloning
+     any changes made to the cloned object will not modify the original object
+
+Cloning is advantageous than using new operator.
+If we want to clone the object, the class should implement clonable interface, else we cannot.
+after that since object is the super class for every class
+object class has clone() method
+we can override this method and throw cloneNotSupportException error
+
+clone() method is used in cloning
+
+If the interface does not contain any methods/members
+then this interface is called as Marking/Tagging interface
+which means the class jus got a tag
+or this interface is marking the class to implement the cloning in its body
+eg. cloneable and serializable interfaces.
