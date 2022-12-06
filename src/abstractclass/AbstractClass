@@ -1,0 +1,30 @@
+Abstract class - An abstract class is a class that contains zero or more abstract methods.
+
+Abstract methods - abstract method is a method without method body (contains only method header)
+                   defined inside the abstract class
+                   declared in the subclasses.
+                   abstract methods are written when the same method has to perform different tasks
+                   depending upon the object calling it.
+                   an incomplete methods.
+
+Both are declared using abstract keyword
+
+It is not possible to create to an object to the abstract classes because,
+since the abstract class contains abstract methods that are incomplete
+so it is not possible for JVM to estimate the total memory required to create th object.
+
+we should create subclass and implement the abstract methods in it
+and can create objects to the subclasses.
+
+It is not possible to create to an object to the abstract classes
+but we can create a reference variable to it, as it does not occupy any memory.
+
+concrete method - method with body
+
+Abstract class can also contain instance variables and concrete methods in addition to abstract methods.
+
+The keyword abstract represents incomplete, so when used with class it is compulsory to create subclass
+to the abstract class for implementation.
+
+final cannot used with abstract class/method as it is contradictory.
+since final prevents class inheritance and method overloading.
