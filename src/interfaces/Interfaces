@@ -1,0 +1,51 @@
+Interface is a specification of method prototype.
+-All the methods of the interfaces are public and abstract by default.
+-can have 0 methods.
+-Not possible to create an object to the interface.
+-declared with keyword 'interface'
+-applicable only to classes.
+-methods in interface should be implemented in subclasses (implementation classes).
+
+ Interface methods are public since it should be available to 3rd party vendors to provide implementation.
+ They are abstract too because their implementation is left for third party vendors.
+
+API (Application programming interface) document - an html document that provides
+a description about the program.
+
+how 3rd party vendors know which method to implement?
+programmers will be providing API doc to the 3rd party vendors.
+
+Interface can have variables of public static and final by default.
+so all variables are constant.
+
+--An interface is a specification of method prototypes.
+This means, only method names are written in the interface without method bodies.
+
+--An interface will have 0 or more abstract methods
+which are all public and abstract by default.
+An interface can have variables which are public static and final by default.
+This means all the variables of the interface are constants.
+
+--None of the methods in an interface can be private, protected or static.
+We cannot create an object to an interface,
+but we can create a reference of interface type.
+
+--All the methods of an interface should be implemented in its implementation classes.
+If any method is not implemented, then that implementation class
+should be declared as 'abstract.
+
+--Interface reference can refer to the objects of its implementation classes.
+When an interface is written, any third party vendor can provide implementation classes
+
+--An interface can extend another interface.
+
+--An interface cannot implement another interface.
+It is possible to write a class within an interface.
+
+--Interface forces the implementation classes to implement all of its methods compulsory.
+ Java compiler checks whether all the methods are
+ implemented in the implementation classes or not.
+
+Callback - a mechanism of calling a function from another function
+ by passing its memory address. can be achieved by interface.
+
