@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"packages.api","c":"Addition","l":"Addition(double, double)","u":"%3Cinit%3E(double,double)"},{"p":"packages.api","c":"Addition","l":"sum()"}];updateSearchResults();

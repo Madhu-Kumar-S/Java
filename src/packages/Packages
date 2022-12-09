@@ -1,0 +1,58 @@
+package - represents a directory / folder that contains a group of classes and interfaces
+
+eg: import java.io.*;
+java - represents directory
+io - sub directory
+* - includes all the classes and interfaces within that sub directory
+
+library - group of packages
+
+2 types:
+1. Built-in packages - these packages are already available in java language.
+can be imported anywhere in the packages
+
+2. User-defined packages - users can create their own package
+can be imported in other classes
+
+To create a user-defined package:
+package packageName;
+package packageName.SubPackageName;
+
+
+Access Specifiers:
+(4 types) - private, public, protected, default.
+we do not use default access specifier, if we did not use any access specifier
+to the member, then java compiler will take that member as default.
+
+private:
+scope is limited only where it is defined - can access only within the class
+i.e., class scope
+
+public:
+scope is available anywhere - can access anywhere in any package
+i.e., global scope
+
+protected:
+scope is limited within package +
+scope is limited outside of the package
+only if the class in another package is sub class of the super class in any other package
+it acts as a public with respect to sub classes
+
+default:
+scope is limited within the package - can access only within the package
+i.e., package scope
+
+
+API documentation:
+API - application programming interface - an html file
+that contains the description of all the features of the software/product/technology.
+- a reference manual that is useful for all the users to understand the features and use them.
+
+Java soft people created api for SE, EE and ME.
+
+how to create API doc?
+copy all the source code(.java) files into a separate directory
+then use documentation comments(/**......*/) where ever necessary
+run-> javadoc *.java
+then html file gets created.
+
