@@ -1,6 +1,6 @@
 to store a group of elements we can use array
 to store a group of objects?
-yes we can use same array to store group of objects
+yes we can use same type of array to store a group of objects
 
 But the thing that is:
 1.array cannot grow dynamically.
@@ -28,6 +28,8 @@ They are implemented in java.util package.
 
 All the collection classes in java.util package
 are the implementation classes of different interfaces
+It simply stores the references of other objects into a collection object.
+
 
 InterFace Type                          Implementation Classes
 
@@ -44,7 +46,7 @@ InterFace Type                          Implementation Classes
 4. Map<K,V>                             HasMap<K,V>
                                         HashSet<K,V>
 
-T -> Generic type parameter (String, Integer, Float, Double, etc...)
+T -> Generic type parameter = wrapper classes (String, Integer, Float, Double, etc...)
 
 Sets:
 Set represents a group of elements just like an array.
@@ -69,10 +71,160 @@ Retrieving elements from collections:
 
 1. using for-each loop:
 
+for(variable:Collection-object)
+{
+statements;
+}
+
 2. using Iterator Interface:
+Iterator obj = collection-object.iterator();
+obj.hasNext() - returns true if the iterator has more elements
+obj.next() - returns the next element in the iterator
+obj.remove(element) - removes the element
 
 3. using ListIterator Interface:
 
+ListIterator obj = collection-object.listIterator();
+obj.hasNext() - returns true if list iterator has more elements when traversing in forward direction
+obj.hasPrevious() - returns true if list iterator has more elements when traversing in backward direction
+obj.next() - returns the next element
+obj.previous() - returns the previous element
+obj.remove(element) - removes the element
+
 4. using Enumeration Interface:
+Enumeration enum = collection-object.enumeration();
+enum.hasMoreElements() - has more elements or not
+enum.nextElement() - returns next element
+
+------HashSet------
+HashSet<T> obj = new HashSet<>();
+HashSet<T> obj = new HashSet<>(int capacity);
+HashSet<T> obj = new HashSet<>(int capacity, int load_factor);
+
+- set of elements
+- order is not guaranteed
+- does not allow duplicate elements
+
+
+the capacity of the elements may increased automatically when more no. of elements are stored
+load_factor determines the point where the capacity of hasSet would be increased
+default initial capacity = 16
+default load_factor = 0.75
+
+methods:
+boolean add(obj)
+boolean remove(obj)
+void clear()
+boolean contains(obj)
+boolean isEmpty()
+int size()
+
+------Stack------
+Stack<T> st = new Stack<>();
+
+-represents group of elements stored in LIFO order
+-Insertion and deletion takes place at one end of the stack (i.e., top)
+-allows duplicate elements
+
+top -> points top element of the stack
+push -> add an element at top of the stack
+pop -> removes an element at top of the stack
+
+methods:
+boolean empty()
+element peek()
+element pop()
+element push(element obj)
+int search(object obj)
+
+------LinkedList------
+Linkedlist<T> ll = new LinkedList<>();
+-represents group of elements in the form of nodes
+-each node will have 3 fields
+    1.link to previous node
+    2.data node
+    3.link to next node
+-Inserting, removing the elements is done quickly
+-store and access data in random order
+
+methods:
+boolean add(element obj)
+void add(int pos,element obj)
+void addFirst(element obj)
+void addlast(element obj)
+element removeFirst()
+element removeLast()
+element remove(int pos)
+void clear()
+element get(int pos)
+element getFirst()
+element getLas()
+element set(int pos, element obj)
+int size()
+int indexOf(Object obj)
+int lastIndexOf(Object obj)
+Object[] toArray()
+
+Difference bw stack and linkedlist
+
+Stack:
+follows LIFO order
+store and access data in order
+use: evaluate expressions
+insertion and deletion of elements is on top of the stack
+
+Linkedlist:
+no order
+store and access data in random order
+use: store and retrieve data
+insertion and deletion of elements can be done anywhere
+
+------ArrayList------
+ArrayList<T> arl = new ArrayList<>();
+- similar to array
+- grow dynamically in size | increases the size everytime by 50%
+- not synchronized by default
+- used for single thread
+
+Arraylist can be synchronized by:
+Collections.synchronizedList(new ArrayList());
+
+------Vector------
+Vector<T> vt = new Vector<>();
+- store elements in order
+- grow dynamically in size | increases the size everytime by doubling it.
+- synchronized by default
+- used for multiple threads
+
+------Queue------
+Queue<T> qu = new Queue<>();
+- stores the elements in FIFO order
+
+------HashMap------
+HashMap<T> hm = new HashMap<>();
+HashMap<T> hm = new HashMap<>(int capacity);
+HashSet<T> obj = new HashSet<>(int capacity, int load_factor);
+- stores the elements in key-value pairs
+- not synchronized by default
+- used for single thread
+- capacity = 16
+- load factor for HashMap/HashTable is 0.75
+
+HashMap can be synchronized by:
+Collections.synchronizedList(new HashMap());
+
+------HashTable------
+HashTable<T> hm = new HashTable<>();
+HashTable<T> hm = new HashTable<>(int capacity);
+HashTable<T> obj = HashTable<>(int capacity, int load_factor);
+- stores the elements in key-value pairs
+- synchronized by default
+- used for multiple threads
+- capacity = 11
+- load factor for HashMap/HashTable is 0.75
+
+
+
+
 
 
