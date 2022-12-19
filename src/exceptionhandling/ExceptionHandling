@@ -1,0 +1,113 @@
+bugs - error in a program
+debugging - process of removing errors in a program
+
+3 types of errors:
+
+1. Compile-time error - syntactical errors found in a code,
+                        due to which program fails to compile.
+                        -deducted by the java compiler
+
+2. Runtime error - errors occur during execution time,
+                   which results in inefficiency of the computer system to execute a particular statement.
+                   -deducted by the JVM
+
+3. Logical error - logic incorrectness
+                   - not deducted by the compiler or JVM
+                   - programmer is solely responsible for it.
+
+
+
+Exception:
+          - error that occurs during only runtime/execution time of a program
+          - aka runtime errors
+          - stops the flow of program when program gets executed
+          - events that will disrupt the normal flow of the program
+
+2 Types:
+1. Checked Exceptions - Exceptions that are checked at compile time by the java compiler
+                      - can be handled by the programmer
+2. Unchecked Exceptions - Exceptions that are checked at runtime by the JVM
+                        - cannot known by the programmer until they run
+                        - programmer can handle them or can throw the error without handling them
+
+
+All exceptions are declared as a classes in java.
+'Throwable' - super class for both the exceptions and errors
+            - available in java.lang package
+
+                                 java.lang
+                                     |
+                                 Throwable
+                                     |
+                       -----------------------------------
+                       |                                 |
+                     Error(UE)                        Exception
+                       |                                 |
+                   all errors                   1.Runtime Exception(UE)
+                                                2.Other Exceptions
+
+Exception - error that occurs during at a runtime and can be handled by the programmer
+Error - that occurs in a program and cannot handled by the programmer
+
+
+3 steps to perform exception handling:
+
+1. try block:
+try{
+statements;
+}
+whenever there is any exception in any statement that should be put into a try block.
+
+2. catch block:
+catch(ExceptionClass ref){
+statements;
+}
+for displaying the exception details to the user
+SOP(ref) - displays the exception details
+printStackTrace(ref) - a method of Throwable class that fetches exception details
+                       from the exception stack and displays them
+
+3. finally block:
+finally{
+statements;
+}
+for performing cleaning up operations(closing files, terminating threads etc...)
+- statements in the finally block gets executed irrespective of exception
+
+Multiple exceptions can be caught by a single catch block(using OR operator) or by multiple catch blocks
+
+Even if there is a possibility of several exceptions in try block, only one exception at a time will occur.
+
+A single try block can be followed by multiple catch blocks
+
+we can write try without catch block
+we cannot write catch without try block
+
+nested try can be written
+
+throws clause:
+used when the programmer does not want to handle the exception and throw it out of the method
+this is used for checked exceptions
+if the programmer does not want to handle the exception rather he need to throw it then he can use throws
+
+throw clause:
+used when the programmer wants to throw the exception explicitly and catch it using catch block
+used in software testing
+used in user-defined exceptions
+
+Types of Exceptions:
+1.Built-in Exception - already available in java
+
+2.user-defined Exception - user creates his own exception
+Steps to create:
+1. create -> class ExceptionClassName extends Exception;
+2. can use constructor to store exception details.
+ExceptionClassName(){}
+or
+ExceptionClassName(String s){ super(s); }
+3. create object to the ExceptionClassName
+ExceptionClassName ecn = new ExceptionClassName();
+throw ecn;
+
+It is possible to rethrow the exceptions from the catch block
+and can catch that exception from the another class inside try block and caught by a catch block

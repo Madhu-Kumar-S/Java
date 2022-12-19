@@ -1,0 +1,25 @@
+Wrapper class:
+- a field that stores the primitive DT
+- conversion of primitive DT into object types (i.e., wrapping Primitive value into object)
+- used in collection classes where it handles only objects
+
+=> so wrapper class is a class that converts primitive type into object type
+where it is needed in the internet to communicate bw two apps
+=> classes in java.util package uses only objects so wrapper classes are needed for handling them
+
+Number is an abstract class whose sub packages are Byte, Short, Integer, Long, Float, Double
+so methods of Number classes are commonly available in sub classes
+
+Character obj = Character.valueOf('A');
+Integer obj = Integer.valueOf(1);
+Float obj = Float.valueOf(2.3f);
+
+when two objects are compared
+if equal returns 0
+if greater returns +ve value
+if Lesser returns -ve value
+
+boxing - converting primitive data type into object type
+unboxing - converting object type into primitive data type
+
+

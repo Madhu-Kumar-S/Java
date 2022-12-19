@@ -6,8 +6,10 @@ But the thing that is:
 1.array cannot grow dynamically.
 which means when an array is created and its size is fixed,
 and at runtime its size cannot be increased and decreased
-2.array stores only elements that belongs to the same datatype and objects that belongs to the same class type.
-3.Adding the elements is easy but inserting or deleting the elements at the mid of the array is difficult
+2.array stores only elements that belongs to the same datatype and
+objects that belongs to the same class type.
+3.Adding the elements is easy but inserting or deleting
+ the elements at the mid of the array is difficult
 4.no methods to carry out for processing the data after retrieving.
 
 to overcome these problems, there is an alternative solution
@@ -16,13 +18,16 @@ we can use class object as an array
 such object is called Collection Objects or Container objects.
 
 Collection Objects or Container objects is an object which can store a group of other objects.
-a collection object has an class called 'Collections or Container class' and these classes are contained in java.util package
+a collection object has an class called 'Collections or Container class'
+and these classes are contained in java.util package
 Collection objects stores the references of other objects into a collection object.
 
-A Collection Framework is a group of collection classes or a class library to handle group of objects.
+A Collection Framework is a group of collection classes or
+ a class library to handle group of objects.
 They are implemented in java.util package.
 
-All the collection classes in java.util package are the implementation classes of different interfaces
+All the collection classes in java.util package
+are the implementation classes of different interfaces
 
 InterFace Type                          Implementation Classes
 
